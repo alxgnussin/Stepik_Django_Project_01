@@ -7,11 +7,11 @@ def main_view(request):
 
 
 def departure_view(request, departure):
-    return render(request, 'tours/departure.html', departure=departure)
+    return render(request, 'tours/departure.html', {'departure': departure})
 
 
 def tour_view(request, id):
-    return render(request, 'tours/tour.html', id=id)
+    return render(request, 'tours/tour.html', {'id': id})
 
 
 def custom_handler404(request, exception):
